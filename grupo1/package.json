@@ -1,0 +1,25 @@
+{
+	"name": "grupo1",
+	"version": "1.0.0",
+	"description": "Servidor Grupo 1",
+	"main": "server.js",
+	"scripts": {
+		"dev": "nodemon server",
+		"start": "NODE_ENV=production node server"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/FRRe-DACS/TP1-GIT-2021.git"
+	},
+	"author": "Grupo 1 - 2021",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/FRRe-DACS/TP1-GIT-2021/issues"
+	},
+	"homepage": "https://github.com/FRRe-DACS/TP1-GIT-2021#readme",
+	"dependencies": {
+		"cors": "^2.8.5",
+		"express": "^4.17.1",
+		"nodemon": "^2.0.7"
+	}
+}
