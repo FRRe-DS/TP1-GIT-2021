@@ -1,4 +1,5 @@
 const express = require('express');
+const path = require('path');
 const cors = require('cors');
 
 const app = express();
@@ -9,6 +10,9 @@ app.use(cors());
 
 // Mount Routes
 app.use('/', require('./routes/home'));
+
+// Static folder
+app.use(express.static(path.join(__dirname, 'client')));
 
 const PORT = process.env.PORT || 4000;
 
