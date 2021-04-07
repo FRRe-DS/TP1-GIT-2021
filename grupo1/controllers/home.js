@@ -6,5 +6,7 @@ const path = require('path');
  * @access Public
  */
 exports.getHome = (req, res, next) => {
-	res.sendFile(path.join(__dirname + '/../client/index.html'));
+	res.json({
+		hola: 'mundo',
+	});
 };

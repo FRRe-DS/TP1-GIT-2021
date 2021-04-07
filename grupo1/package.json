@@ -4,8 +4,9 @@
 	"description": "Servidor Grupo 1",
 	"main": "server.js",
 	"scripts": {
-		"dev": "nodemon server",
-		"start": "NODE_ENV=production node server"
+		"server": "nodemon server",
+		"client": "cd ./client && npm start",
+		"dev": "concurrently \"nodemon server\" \"cd ./client && npm start\""
 	},
 	"repository": {
 		"type": "git",
@@ -21,5 +22,8 @@
 		"cors": "^2.8.5",
 		"express": "^4.17.1",
 		"nodemon": "^2.0.7"
+	},
+	"devDependencies": {
+		"concurrently": "^6.0.1"
 	}
 }
