@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cliente-servidor</title>
+  <style>
+    .mgt-20 {
+      margin-top: 20px;
+    }
+    .mgl-10 {
+      margin-left: 10px;
+    }
+  </style>
+</head>
+<body>
+  <input type="text" id="userText">
+  <button onclick="insertText()">INSERT</button>
+  <div class="mgt-20">
+    <label id="title">
+      <strong>Text Inserted: </strong>
+    </label>
+    <label class="mgl-10" id="labelText">...</label>
+  </div>
+</body>
+<script>
+  function insertText() {
+    const userTextValue = document.querySelector('#userText').value;
+    const labelText = document.querySelector('#labelText');
+    labelText.innerHTML = userTextValue;
+  }
+</script>
+</html>
