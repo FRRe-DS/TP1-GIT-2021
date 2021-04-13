@@ -16,7 +16,7 @@ const rl = readline.createInterface({
   output: process.stdout
 });
 
-rl.question('ingrese tu nombre ', (answer) => {
+rl.question('ingrese su apellido', (answer) => {
   // TODO: Log the answer in a database
   console.log(`hola, un gusto ${answer}`);
 
