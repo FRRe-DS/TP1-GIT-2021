@@ -26,7 +26,7 @@ const rl = readline.createInterface({
  });
 
  //suma hasta 10
- const n= 10;
+ const n= 12;
  function numberSum(N) {
   var total = 0;
     for(var i = 1; i <= N; i++){
