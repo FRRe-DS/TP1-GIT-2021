@@ -13,7 +13,7 @@ const readline = require('readline').createInterface({
 });
 
 readline.question('Como te llamas? ', nombre =>{
-    console.log(`Hola ${nombre}`);
+    console.log(`Hola ${nombre} que tengas buen dia`);
     readline.close();
 }
 )
