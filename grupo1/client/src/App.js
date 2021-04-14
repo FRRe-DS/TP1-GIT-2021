@@ -14,6 +14,9 @@ function App() {
 	const sumar = () => {
 		alert(a+b);
 	};
+	const restar = () => {
+		alert(a-b);
+	};
 	return (
 		<div className="App">
 			<h1>hola mundo</h1>
@@ -22,6 +25,7 @@ function App() {
 			<input type="number" placeholder="..." value={a} onChange={onChangeA} />
 			<input type="number" placeholder="..." value={b} onChange={onChangeB} />
 			<button onClick={sumar}>Sumar</button>
+			<button onClick={restar}>Restar</button>
 		</div>
 	);
 }
