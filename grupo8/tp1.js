@@ -7,8 +7,10 @@ http.createServer(function (request, response) {
    response.writeHead(200, {'Content-Type': 'text/plain'});
 
    // Send the response body as "Hello World"
-   respon.end('Hello soy Manu\n');
-}).listen(8081);
+
+   response.end('Hola soy majo!');
+
+
 
 // Console will print the message
 console.log('Server running at http://127.0.0.1:8081/');
@@ -23,4 +25,17 @@ const rl = readline.createInterface({
    console.log(`Thank you for your valuable feedback: ${answer}`);
 
    rl.close();
- });
+ }
+);
+
+ //suma hasta 10
+ const n= 12;
+ function numberSum(N) {
+  var total = 0;
+    for(var i = 1; i <= N; i++){
+      total += i;
+    }
+    return total;
+}
+console.log(numberSum(n));
+
