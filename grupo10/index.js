@@ -11,13 +11,13 @@ app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`)
 })
 
-function add(x1,x2){
+function suma(x1,x2){
     return x1+x2;
 }
 
 
 
-function divide(x1,x2){
+function division(x1,x2){
     if (x2==0) {
         console.log('No divisible por cero');
     } else {
