@@ -1,11 +1,11 @@
 var http = require("http");
 
 http.createServer(function (request, response) {
-   // Send the HTTP header 
+   // Send the HTTP header
    // HTTP Status: 200 : OK
    // Content Type: text/plain
    response.writeHead(200, {'Content-Type': 'text/plain'});
-   
+
    // Send the response body as "Hello World"
    response.end('Hello soy fer\n y yo soy Martín, Dania también estuvo aqui\n');
 }).listen(8081);
@@ -17,10 +17,23 @@ const rl = readline.createInterface({
    input: process.stdin,
    output: process.stdout
  });
- 
+
  rl.question('What do you think of Node.js? ', (answer) => {
    // TODO: Log the answer in a database
    console.log(`Thank you for your valuable feedback: ${answer}`);
- 
+
    rl.close();
- });
+ }
+);
+
+ //suma hasta 10
+ const n= 12;
+ function numberSum(N) {
+  var total = 0;
+    for(var i = 1; i <= N; i++){
+      total += i;
+    }
+    return total;
+}
+console.log(numberSum(n));
+
