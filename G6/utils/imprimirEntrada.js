@@ -5,7 +5,7 @@ const imprimirEntrada = () => {
         output: process.stdout
       });
 
-   readline.question('Entrada: ', prueba => {
+   readline.question('Otra Entrada: ', prueba => {
         console.log(`Resultado: ${prueba}`); 
         readline.close(); 
    }); 
