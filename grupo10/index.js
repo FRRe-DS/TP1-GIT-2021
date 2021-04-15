@@ -1,4 +1,4 @@
-const express = require('express')
+const express = require('express
 
 const app = express()
 const port = 3000
@@ -18,11 +18,10 @@ const rl = readline.createInterface({
   output: process.stdout
 });
 
-rl.question('ingrese tu nombre ', (answer) => {
+rl.question('ingrese su nombre por favor ', (answer) => {
   // TODO: Log the answer in a database
   console.log(`hola, un gusto ${answer}`);
 
   rl.close();
 });
 
-///comentario///
