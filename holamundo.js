@@ -16,3 +16,9 @@ readline.question('Como te llamas? ', nombre =>{
     readline.close();
 }
 )
+
+readline.question('Cuantos años tenes pa? ', nombre =>{
+    console.log(Hola tengo ${edad} años, gracias por preguntar);
+    readline.close();
+}
+)
