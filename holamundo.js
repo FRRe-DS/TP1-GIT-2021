@@ -11,14 +11,14 @@ const readline = require('readline').createInterface({
     output: process.stdout
 });
 
-readline.question('Como te llamas? ', nombre =>{
-    console.log(Hola ${nombre} que tengas buen dia);
-    readline.close();
-}
+const prompt = require('prompt-sync')({sigint: true});
+const num = prompt('Enter a number: ');
+console.log('Your number + 4 =');
+console.log(Number(num) + 4);
 )
 
-readline.question('Cuantos años tenes pa? ', nombre =>{
-    console.log(Hola tengo ${edad} años, gracias por preguntar);
+readline.question('Cuanto calzas?? ', calce =>{
+    console.log(Bue ${calce} que paton);
     readline.close();
 }
 )
