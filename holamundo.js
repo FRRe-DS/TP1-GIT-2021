@@ -11,11 +11,19 @@ const readline = require('readline').createInterface({
     output: process.stdout
 });
 
-readline.question('Como te llamas? ', nombre =>{
-    console.log(Hola ${nombre} que tengas buen dia);
-    readline.close();
+// Codigo modificado------------------------------------------------
+var numero = Array(4);
+var suma;
+ 
+for (i = 0; i < numero.length; i++){
+    numero[i] = prompt("Ingrese un numero que termine en cero");
+ 
+    suma=numero; //Aquí debería estar la suma de los números ingresados por el usuario
 }
-)
+ 
+document.write(suma);
+
+// Codigo modificado------------------------------------------------
 
 readline.question('Cuanto calzas?? ', calce =>{
     console.log(Bue ${calce} que paton);
