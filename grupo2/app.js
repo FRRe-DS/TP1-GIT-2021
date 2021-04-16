@@ -13,6 +13,10 @@ http.createServer(function (request, response) {
 // Console will print the message
 console.log('Server running at http://127.0.0.1:8081/');
 
+function suma(a, b){
+  return a + b;
+}
+
 const printInput = () => {
   const input = prompt('ingrese una entrada');
   const label = document.querySelector('label');
