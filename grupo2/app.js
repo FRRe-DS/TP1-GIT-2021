@@ -17,6 +17,10 @@ function suma(a, b){
   return a + b;
 }
 
+const numberToString = (number) => {
+  return number+'';
+}
+
 function cuadrado(numero) {
   return numero * numero;
 };
