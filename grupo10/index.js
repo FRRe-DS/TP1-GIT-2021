@@ -24,3 +24,7 @@ function division(x1,x2){
         return x1/x2;
     }
 }
+
+function multiplicar(a,b){
+	return (a*b);
+}
