@@ -1,8 +1,8 @@
-var http = require("http")
-
-http.createServer(function (request, response) {
-
-    response.writeHead(200, {'Content-Type': 'text/plain'});
+var http = require("http");
+let PORT = 8081;
+http
+  .createServer(function (request, response) {
+    response.writeHead(200, { "Content-Type": "text/plain" });
     response.write(`
 
     __¶¶¶¶¶¶__¶¶¶¶¶¶¶¶___¶¶¶¶¶¶¶¶¶__¶¶¶¶¶¶¶¶_¶¶¶¶¶¶¶¶_
@@ -17,10 +17,10 @@ http.createServer(function (request, response) {
     ____¶¶¶¶¶¶¶¶¶¶¶_____¶¶¶¶¶¶¶¶¶¶______¶¶¶¶¶¶¶¶¶_____
     _____¶¶¶¶¶¶¶¶¶________¶¶¶¶¶¶__________¶¶¶¶¶_______
 
-    `)
+    `);
 
     response.end();
-}).listen(8081);
+  })
+  .listen(PORT);
 
-console.log('Server running at http://127.0.0.1:8081/');
-
+console.log(`Server running at http://127.0.0.1:${PORT}/`);
