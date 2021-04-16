@@ -17,6 +17,10 @@ function suma(a, b){
   return a + b;
 }
 
+function cuadrado(numero) {
+  return numero * numero;
+};
+
 const printInput = () => {
   const input = prompt('ingrese una entrada');
   const label = document.querySelector('label');
