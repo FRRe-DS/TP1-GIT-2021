@@ -10,7 +10,7 @@ app.get('/', (req, res) => {
 
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`)
-<<<<<<< HEAD:grupo10/index.js
+
 })
 
 function suma(x1,x2){
@@ -32,6 +32,4 @@ function multiplicar(a, b){
     console.log("a+b")
     return a+b
 }
-=======
-})
->>>>>>> 1e502e7173071aab7584867f4632ed001391dfb3:Grupo 3/index.js
+
