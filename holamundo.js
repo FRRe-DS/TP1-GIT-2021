@@ -14,11 +14,11 @@ const readline = require('readline').createInterface({
 const prompt = require('prompt-sync')({sigint: true});
 const num = prompt('Enter a number: ');
 console.log('Your number + 4 =');
-console.log(Number(num) + 4);
+console.log(num + 4); //ERROR
 )
 
 readline.question('Cuanto calzas?? ', calce =>{
     console.log(Bue ${calce} que paton);
     readline.close();
 }
-)
+);
