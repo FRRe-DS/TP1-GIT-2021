@@ -21,4 +21,4 @@ readline.question('Cuanto calzas?? ', calce =>{
     console.log(Bue ${calce} que paton);
     readline.close();
 }
-);
+)
