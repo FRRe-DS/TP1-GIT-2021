@@ -6,6 +6,7 @@ const server = http.createServer(function (req, res) {
     res.end('Hola Mundo\n');
 });
 server.listen(8000);
+
 const readline = require('readline').createInterface({
     input: process.stdin,
     output: process.stdout
@@ -14,8 +15,7 @@ const readline = require('readline').createInterface({
 const prompt = require('prompt-sync')({sigint: true});
 const num = prompt('Enter a number: ');
 console.log('Your number + 4 =');
-console.log(num + 4); //ERROR
-)
+console.log(Number(num) + 4); //linea arreglada
 
 readline.question('Cuanto calzas?? ', calce =>{
     console.log(Bue ${calce} que paton);
