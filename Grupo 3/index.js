@@ -31,18 +31,20 @@ function division(x1,x2){
     }
 }
 // funcion de daniel
-const readline = require ('readline');
+function daniel(){
+    const readline = require ('readline');
 
-const rl = readline.createInterface({
-	input: process.stdin,
-	output: process.stdout
-});
+    const rl = readline.createInterface({
+        input: process.stdin,
+        output: process.stdout
+    });
 
-rl.question('como te llamas', (answer) => {
-	console.log('fulanito ${answer}');
-rl.close();
+    rl.question('como te llamas', (answer) => {
+        console.log('fulanito ${answer}');
+    rl.close();
 
-});
+    });
+}
 // funcion de agustin
 function multiplicar(a, b){
     console.log("a+b")
